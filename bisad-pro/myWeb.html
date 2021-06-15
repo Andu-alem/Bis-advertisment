@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="icon-search.PNG" type="text/img">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.css">
+    <script type="text/javascript" src="angular-1.7.8/angular.js">
+    </script>
+    <title></title>
+  </head>
+  <body ng-app="myApp" ng-controller="myCont">
+
+    <!-- Navigtion -->
+    <nav class="navbar navbar-expand-md navbar-blue bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white bg-info" href="#"><h1>Wellcome To this web</h1></a>
+<!---
+      <button type="button" class="navbar-toggler" ng-click="myFunc()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul ng-show="showMe" class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+    </ul> -->
+    </div>
+    </nav>
+    <nav class="sticky-top">
+    <div class="container-fluid navbar navbar-red bg-dark text-white sticky-top">
+        <form role = "form">
+      <label for="search"><h3><small>Find whatever you want around you by searching:</small></h3></label>
+      <input class="form-coltrol" type="search" ng-model="sear" onfocus="this.placeholder='';" onblur="this.placeholder='Search spacific place'" placeholder="Search spacific place">
+      <input type="image" class="btn btn-outline-info btn-sm bg-white" src="icon-search.PNG" alt="GO" name="" value="">
+<!-- search button
+      <button type="button" class="btn btn-outline-info btn-sm"><img src="icon-search.PNG" alt="Search"></button>
+-->
+    </form>
+  </div></nav>
+    <!-- Jumbotron -->
+      <div class="row container-fluid padding m-sm-auto p-sm-2 pb-2 pb-sm-3 pt-sm-3">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10 text-secondary color-white">
+          <p class="text-primary"><h5>Do you have your own buissness? Then why dont you advertise here! be available for everyone!</h5></p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+          <a href="advertisment.html">
+            <button type="button" class="btn btn-outline-dark btn-sm">Register Here..</button>
+          </a>
+        </div>
+      </div>
+   <!-- commenting the carousel part
+    <div class="carousel slide" data-ride="carousel">
+      <!-- Indicators --><!--
+      <ol class="carousel-indicators">
+        <li  ng-click="myItem(0)"></li>
+        <li ng-click="myItem(1)">
+        </li>
+        <li ng-click="myItem(2)"></li>
+        <li ng-click="myItem(3)"></li>
+      </ol>
+
+      <!-- Wrapper for slides --><!--
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" ng-show="showZero">
+          <img src="Sc.PNG" alt="Chania">
+          <div class="carousel-caption">
+            <h1 class="display-2">My Website</h1>
+            <h3>My web using Angular and bootstrap</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">Andi</button>
+            <button type="button" class="btn btn-success btn-lg">Get More</button>
+          </div>
+        </div>
+
+        <div class="item" ng-show="showOne">
+          <img src="trm.PNG" alt="Chania">
+        </div>
+
+        <div class="item" ng-show="showTwo">
+          <img src="Sc.PNG" alt="Flower">
+          <div class="carousel-caption">
+            <h1 class="display-2">It will help you to find your place</h1>
+            <h3>My web using Angular and bootstrap</h3>
+            <button type="button" class="btn btn-outline-light btn-lg" ng-click="myItem(0)">Back to 1</button>
+            <button type="button" class="btn btn-primary btn-lg">Get More</button>
+          </div>
+        </div>
+
+        <div class="item" ng-show="showThree">
+          <img src="Sc.PNG" alt="Flower">
+        </div>
+      </div>
+    </div>
+    end of carousel -->
+<!--- Cards -->
+<div class="container-fluid padding col-lg-11">
+  <div class="row padding">
+    <div class="col-sm-6 col-md-4 col-lg-3 padding pb-3 pb-md-3">
+      <div class="panel panel-default card padding">
+        <div class="panel-heading">
+          <h4>Alison Fashion House </h4>
+        </div>
+        <div class="panel-body">
+          <img class="card-img w-75"  src="a.jpg" alt="">
+          <p class="card-text">In this restaurant you can get what ever you want</p>
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+      <div class="panel-footer">
+        <strong>Location:</strong> around Mesalemya in front of the church
+      </div>
+    </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pb-md-3">
+      <div class="card">
+        <img class="card-img-top"src="b.jpgs" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Food Resturant</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. In this restaurant you can get what ever you want</p>
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pb-md-3">
+      <div class="card">
+        <img class="card-img-top"src="b.jpgs" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Food Resturant</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. In this restaurant you can get what ever you want</p>
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pb-md-3">
+      <div class="card">
+        <img class="card-img-top"src="b.jpgs" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Higer Clinic</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. In this restaurant you can get what ever you want</p>
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pb-md-3">
+      <div class="card">
+        <img class="card-img-top"src="b.jpgs" alt="">
+        <div class="card-body">
+          Around Highschool
+          <h4 class="card-title">Food Resturant and Cafee</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. In this restaurant you can get what ever you want</p>
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pb-md-3">
+      <div class="card panel panel-default">
+        <div class="panel-heading">
+          Babe Tour guiding
+        </div>
+        <div class="panel-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. In this restaurant you can get what ever you
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+        <div class="panel-footer">
+          location: around piasa 3rd way
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pb-md-3">
+      <div class="card">
+        <img class="card-img-top"src="c.jpg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Food Resturant</h4>
+          <p class="card-text">In this restaurant you can get what ever you want</p>
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pb-md-3">
+      <div class="card">
+        <img class="card-img-top w-90"src="b.jpg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Food Resturant</h4>
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pb-md-3">
+      <h4 class="card-title">Watch This video</h4>
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="tilobegn.MP4"></iframe>
+      </div>
+        <div class="card-body">
+          <a href="#" class="btn btn-outline-secondary">View Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+<div class="col-12">
+  <hr class="light">
+  <h5>More information</h5>
+  <hr class="light">
+  <p>About us</p>
+  <p>Read more</p>
+  <p>And more...</p>
+</div>
+<div class="col-12">
+<hr class="light">
+<h5>&copy; All Rights Are Reserved.</h5>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+  angular.module("myApp",[]).controller("myCont",function($scope){
+    $scope.showMe = false;
+    $scope.showZero = true;
+    $scope.showOne = false;
+    $scope.showTwo = false;
+    $scope.showThree = false;
+
+    $scope.myFunc = function(){
+      $scope.showMe = !$scope.showMe;
+    }
+    $scope.myItem = function(x){
+      if (x==0) {
+        $scope.showOne = false;
+        $scope.showTwo = false;
+        $scope.showThree = false;
+        $scope.showZero = true;
+      }
+      else if(x==1){
+      $scope.showZero = false;
+      $scope.showTwo = false;
+      $scope.showThree = false;
+      $scope.showOne = true;}
+      else if (x==2) {
+        $scope.showOne = false;
+        $scope.showZero = false;
+        $scope.showThree = false;
+        $scope.showTwo = true;
+      }
+      else if (x==3) {
+        $scope.showOne = false;
+        $scope.showTwo = false;
+        $scope.showZero = false;
+        $scope.showThree = true;
+      }
+    }
+  });
+</script>
+  </body>
+</html>
